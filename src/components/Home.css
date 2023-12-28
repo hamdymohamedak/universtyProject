@@ -1,0 +1,57 @@
+.HomeParent {
+  display: flex;
+  background-color: transparent;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-content: center;
+  gap: 1rem;
+  background-color: #0F0F0F;
+  padding: 1rem;   
+  background: url(../../public/bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+@media (max-width:325px) {
+  html{
+    font-size: 10px;
+  }
+  .HomeParent{
+    grid-template-columns: auto;
+  }
+}
+@media (min-width:326px) and  (max-width:649px) {
+  html{
+    font-size: 13px;
+  }
+  .HomeParent{
+    grid-template-columns: auto;
+  }
+}
+@media (min-width:649px) and  (max-width:888px) {
+  html{
+    font-size: 15px;
+  }
+  .HomeParent{
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width:888px) and  (max-width:1200px) {
+  html{
+    font-size: 16px;
+  }
+  .HomeParent{
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (min-width:1400px) {
+  html{
+    font-size: 17px;
+  }
+  .HomeParent{
+    grid-template-columns: auto auto auto auto;
+  }
+}
